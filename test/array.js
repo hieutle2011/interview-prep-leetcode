@@ -43,4 +43,27 @@ describe('Array', () => {
       expect(nums).to.eql(output)
     })
   })
+
+
+  describe('#singleNumber', () => {
+    const singleNumber = require('../array/singleNum')
+
+    it('Should be correct with test 1', () => {
+      let nums = [2,2,1]
+      const output = 1
+
+      const result = singleNumber(nums)
+
+      expect(result).to.equal(output)
+    })
+
+    it('Should be correct with test 2', () => {
+      let nums = [4,1,2,1,2]
+      const output = 4
+
+      const result = singleNumber(nums)
+
+      expect(result).to.equal(output)
+    })
+  })
 })
