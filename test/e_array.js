@@ -4,7 +4,7 @@ const expect = require('chai').expect
 describe('Array', () => {
 
   describe('#containsDuplicate', () => {
-    const containsDuplicate = require('../array/containDup')
+    const containsDuplicate = require('../array/e_containDup')
 
     it('Should be true if found', () => {
       const input = [1, 2, 3, 1]
@@ -21,7 +21,7 @@ describe('Array', () => {
 
 
   describe('#rotate', () => {
-    const rotate = require('../array/rotate')
+    const rotate = require('../array/e_rotate')
 
     it('Should be correct with all positive numbers', () => {
       let nums = [1, 2, 3, 4, 5, 6, 7]
@@ -46,7 +46,7 @@ describe('Array', () => {
 
 
   describe('#singleNumber', () => {
-    const singleNumber = require('../array/singleNum')
+    const singleNumber = require('../array/e_singleNum')
 
     it('Should be correct with test 1', () => {
       let nums = [2,2,1]
