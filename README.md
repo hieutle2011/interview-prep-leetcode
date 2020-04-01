@@ -20,5 +20,7 @@ npm install
 npm test
 ```
 
+## Todo
+- Using hash map to spped up "threeSum"
 
 [1]:https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice

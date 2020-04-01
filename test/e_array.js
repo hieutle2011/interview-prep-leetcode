@@ -1,7 +1,7 @@
 const { describe, it } = require('mocha')
 const expect = require('chai').expect
 
-describe('Array', () => {
+describe('Array (Easy Collection)', () => {
 
   describe('#containsDuplicate', () => {
     const containsDuplicate = require('../array/e_containDup')
