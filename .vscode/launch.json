@@ -15,7 +15,8 @@
             "args": [
                 "--color",
                 "--grep",
-                "wip"
+                // "wip",
+                "w30day",
             ]
         }
     ]
