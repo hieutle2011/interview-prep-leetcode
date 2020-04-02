@@ -12,8 +12,9 @@ var isHappy = function (n) {
         trace.push(num)
         let arr = num.toString().split('')
         // calculate new num
-        num = 0
-        arr.forEach((item) => num += parseInt(item) ** 2)
+        const reducer = (accumulator, currentValue) => parseInt(accumulator) + parseInt(currentValue) ** 2
+        const resetValue = 0
+        num = arr.reduce(reducer, resetValue)
     }
     return true
 };
