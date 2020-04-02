@@ -3,15 +3,12 @@ const expect = require('chai').expect
 
 describe('Array (Medium Collection)', () => {
 
-  describe('#threeSum @wip', () => {
+  describe('#threeSum', () => {
     const threeSum = require('../array/m_threeSum')
 
     it('Should be correct with first test', () => {
       const input = [-1, 0, 1, 2, -1, -4]
-      let exp = [
-        [-1, -1, 2],
-        [-1, 0, 1]
-      ]
+      let exp = [[-1, -1, 2], [-1, 0, 1]]
       const result = threeSum(input)
       expect(result).to.eql(exp)
     })

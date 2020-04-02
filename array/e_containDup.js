@@ -30,26 +30,20 @@ const mapTable = (nums) => {
   return false
 }
 
-const makeObjNum = (nums) => {
-  const hashTable = {}
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] in hashTable) hashTable[nums[i]]++
-    else hashTable[nums[i]] = 1
+const hashTable = (nums) => {
+  const myList = []
+  for (let i =0; i < nums.length; i++) {
+    let num = nums[i]
+    if (myList.includes(num)) return true
+    myList.push(num)
   }
-  return hashTable
+  return false
 }
 
 const makeMapNum = (nums) => {
   let myMap = new Map()
   for (let i = 0; i < nums.length; i++) {
     let num = nums[i]
-
-    // let value = myMap.get(num)
-
-    // if (value) myMap.set(num, value++)
-    // else myMap.set(num, 1)
-
-
     if (myMap.has(num)) {
       let val = myMap.get(num) + 1
       myMap.set(num, val)
@@ -60,6 +54,7 @@ const makeMapNum = (nums) => {
 }
 
 module.exports = {
-  sort_loop,
+  sort_loop, // Approach: Sorting
   mapTable,
+  hashTable,
 }
