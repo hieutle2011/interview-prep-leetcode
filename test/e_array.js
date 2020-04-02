@@ -52,7 +52,7 @@ describe('Array (Easy Collection)', () => {
       let nums = [2,2,1]
       const output = 1
 
-      const result = singleNumber(nums)
+      const result = singleNumber.hashTable(nums)
 
       expect(result).to.equal(output)
     })
@@ -61,7 +61,7 @@ describe('Array (Easy Collection)', () => {
       let nums = [4,1,2,1,2]
       const output = 4
 
-      const result = singleNumber(nums)
+      const result = singleNumber.hashTable(nums)
 
       expect(result).to.equal(output)
     })
