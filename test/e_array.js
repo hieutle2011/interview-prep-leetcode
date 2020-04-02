@@ -3,6 +3,60 @@ const expect = require('chai').expect
 
 describe('Array (Easy Collection)', () => {
 
+  describe('#Intersection of Two Arrays II', () => {
+    const { intersect } = require('../array/e_intersectArray')
+
+    it('Should be correct array tc1', () => {
+      const nums1 = [1, 2, 2, 1]
+      const nums2 = [2, 2]
+      const exp = [2, 2]
+
+      const result = intersect(nums1, nums2)
+      expect(result.length).to.equal(exp.length)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be correct array tc2', () => {
+      const nums1 = [4, 9, 5]
+      const nums2 = [9, 4, 9, 8, 4]
+      const exp = [9, 4]
+
+      const result = intersect(nums1, nums2)
+      expect(result.length).to.equal(exp.length)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be empty array tc3', () => {
+      const nums1 = [4, 9, 5]
+      const nums2 = [1, 2, 3]
+      const exp = []
+
+      const result = intersect(nums1, nums2)
+      expect(result.length).to.equal(exp.length)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be one item in array tc4', () => {
+      const nums1 = [1, 2, 2, 1]
+      const nums2 = [2]
+      const exp = [2]
+
+      const result = intersect(nums1, nums2)
+      expect(result.length).to.equal(exp.length)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be one item in array tc5', () => {
+      const nums1 = [3, 1, 2]
+      const nums2 = [1, 1]
+      const exp = [1]
+
+      const result = intersect(nums1, nums2)
+      expect(result.length).to.equal(exp.length)
+      expect(result).to.eql(exp)
+    })
+  })
+
   describe('#containsDuplicate', () => {
     const containsDuplicate = require('../array/e_containDup')
 
@@ -49,7 +103,7 @@ describe('Array (Easy Collection)', () => {
     const singleNumber = require('../array/e_singleNum')
 
     it('Should be correct with test 1', () => {
-      let nums = [2,2,1]
+      let nums = [2, 2, 1]
       const output = 1
 
       const result = singleNumber.hashTable(nums)
@@ -58,7 +112,7 @@ describe('Array (Easy Collection)', () => {
     })
 
     it('Should be correct with test 2', () => {
-      let nums = [4,1,2,1,2]
+      let nums = [4, 1, 2, 1, 2]
       const output = 4
 
       const result = singleNumber.hashTable(nums)
