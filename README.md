@@ -23,5 +23,6 @@ npm test
 
 ## Todo
 - Using hash map to spped up "threeSum"
+- Using the *divide and conquer approach* to improve "maxSubArray"
 
 [1]:https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice
