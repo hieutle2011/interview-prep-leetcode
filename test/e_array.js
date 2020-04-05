@@ -2,6 +2,49 @@ const { describe, it } = require('mocha')
 const expect = require('chai').expect
 
 describe('Array (Easy Collection)', () => {
+  describe('#Plus One', () => {
+    const plusOne = require('../array/e_plusOne')
+
+    it('Should be correct array with leading zeros', () => {
+      const input = [0, 0, 1, 2, 3]
+      const exp = [1, 2, 4]
+
+      const result = plusOne(input)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be correct array with normal numbers', () => {
+      const input = [4, 3, 2, 1]
+      const exp = [4, 3, 2, 2]
+
+      const result = plusOne(input)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be correct array with big numbers', () => {
+      const input = [6, 1, 4, 5, 3, 9, 0, 1, 9, 5, 1, 8, 6, 7, 0, 5, 5, 4, 3]
+      const exp = [6, 1, 4, 5, 3, 9, 0, 1, 9, 5, 1, 8, 6, 7, 0, 5, 5, 4, 4]
+
+      const result = plusOne(input)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be correct array with all 9s like [9,9]', () => {
+      const input = [9, 9]
+      const exp = [1, 0, 0]
+
+      const result = plusOne(input)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be correct array with last numbers are/is 9 like [1,9]', () => {
+      const input = [1, 9]
+      const exp = [2, 0]
+
+      const result = plusOne(input)
+      expect(result).to.eql(exp)
+    })
+  })
 
   describe('#Intersection of Two Arrays II', () => {
     const { intersect } = require('../array/e_intersectArray')
