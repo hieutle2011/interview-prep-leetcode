@@ -3,6 +3,38 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
+  describe('#Day 07: countElements @wip', () => {
+    const countElements = require('../challenge30days/day_07')
+
+    it('Should return correct for tc1', () => {
+      const input = [1,2,3]
+      const output = 2
+      const result = countElements(input)
+      expect(result).to.eql(output)
+    })
+
+    it('Should return correct for tc2', () => {
+      const input = [1,1,3,3,5,5,7,7]
+      const output = 0
+      const result = countElements(input)
+      expect(result).to.eql(output)
+    })
+
+    it('Should return correct for tc3', () => {
+      const input = [1,3,2,3,5,0]
+      const output = 3
+      const result = countElements(input)
+      expect(result).to.eql(output)
+    })
+
+    it('Should return correct for tc4', () => {
+      const input = [1,1,2,2]
+      const output = 2
+      const result = countElements(input)
+      expect(result).to.eql(output)
+    })
+  })
+
   describe('#Day 06: groupAnagrams', () => {
     const groupAnagrams = require('../challenge30days/day_06')
 
@@ -38,7 +70,7 @@ describe('30 days leetcoding challenge @30day', () => {
     })
 
     it('Should return correct for tc4', () => {
-      const input = ["dad","day", "day", "boo", "bob"]
+      const input = ["dad", "day", "day", "boo", "bob"]
       const output = [["dad"], ["day", "day"], ["boo"], ["bob"]]
 
       const result = groupAnagrams(input)
