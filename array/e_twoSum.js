@@ -8,19 +8,13 @@ var twoSum = function (nums, target) {
     const map = {}
     for (let i = 0; i < nums.length; i++) {
         let num = nums[i]
+        let y = target - num
+
+        // We can check here, without to run through all num of nums
+        if ((y in map) && (i != map[y])) return [map[y], i]
         map[num] = i
     }
 
-    // finding a pair
-    for (let i = 0; i < nums.length; i++) {
-        let x = nums[i]
-        let y = target - x
-
-        // if number y in map, and
-        // index of num y is not same as current index i
-        let index_y = map[y]
-        if ((y in map) && (i != index_y)) return [i, index_y]
-    }
     // else if not found a pair
     return []
 };
