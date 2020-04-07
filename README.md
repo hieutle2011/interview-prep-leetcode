@@ -7,7 +7,8 @@
 ### On experience
 - Coding skill can be greatly improved with [deliberate practice](1).
 - Try to attack the problem for the 2nd or even better, the 3rd time.
-- Learn to use Map object and iterator object in Javascript
+- Learn to use Map object and iterator object in Javascript.
+- Write unit test is tedious but well worth your time debugging and refactoring later.
 
 ### On Array
 - The easiest solution is quite obvious, but the challenging part is to find the trick to solve the problem without using any additional memory.

@@ -2,6 +2,28 @@ const { describe, it } = require('mocha')
 const expect = require('chai').expect
 
 describe('Array (Easy Collection)', () => {
+
+  describe('#twoSum', () => {
+    const twoSum = require('../array/e_twoSum')
+    it('Should be correct array tc1', () => {
+      const nums = [2, 7, 11, 15]
+      const target = 9
+      const exp = [0, 1]
+
+      const result = twoSum(nums, target)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should be correct array tc2', () => {
+      const nums = [3, 2, 4]
+      const target = 6
+      const exp = [1, 2]
+
+      const result = twoSum(nums, target)
+      expect(result).to.eql(exp)
+    })
+  })
+
   describe('#Plus One', () => {
     const plusOne = require('../array/e_plusOne')
 

@@ -3,7 +3,7 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 07: countElements @wip', () => {
+  describe('#Day 07: countElements', () => {
     const countElements = require('../challenge30days/day_07')
 
     it('Should return correct for tc1', () => {
