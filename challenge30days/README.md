@@ -8,3 +8,6 @@
 - 02nd: Next challenge is easy and does't take quite a lot of time from me. I feel positive as archiving small wins. Just invite some friends to join the challenge.
 - 03rd: Solved by looping but it took 232 ms. Can be improved by using the divide and conquer approach. (major distribution in the region of 50-70 ms)
 - 04th: Quite easy, using Javascript Array.prototype.splice to modify array inplace.
+- 05th: Solved before.
+- 06th: Anagram is a very interesting subject, i found it quite hard to tackle it, learnt a great deal from google it ^^. Will come back to this later.
+- 07th: Store numbers in a hash map with its occurence, then loop the hash map to count the valid numbers.

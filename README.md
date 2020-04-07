@@ -11,6 +11,7 @@
 
 ### On Array
 - The easiest solution is quite obvious, but the challenging part is to find the trick to solve the problem without using any additional memory.
+- Store data in a hash map boost the search.
 
 ## Installation
 
@@ -24,5 +25,6 @@ npm test
 ## Todo
 - Using hash map to spped up "threeSum"
 - Using the *divide and conquer approach* to improve "maxSubArray"
+- Look deeper into the *groupAnagrams*
 
 [1]:https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice
