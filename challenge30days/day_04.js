@@ -9,8 +9,6 @@ var moveZeroes = function (nums) {
             nums.push(zero)
         }
     }
-
-    console.log(nums)
 };
 
 module.exports = moveZeroes
