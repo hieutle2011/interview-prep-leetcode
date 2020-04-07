@@ -3,6 +3,50 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
+  describe('#Day 06: groupAnagrams', () => {
+    const groupAnagrams = require('../challenge30days/day_06')
+
+    it('Should return correct for tc1', () => {
+      const input = ["eat", "tea", "tan", "ate", "nat", "bat"]
+      const output = [
+        ["eat", "tea", "ate"],
+        ["tan", "nat"],
+        ["bat"]
+      ]
+
+      const result = groupAnagrams(input)
+
+      expect(result).to.eql(output)
+    })
+
+    it('Should return correct for tc2', () => {
+      const input = [""]
+      const output = [[""]]
+
+      const result = groupAnagrams(input)
+
+      expect(result).to.eql(output)
+    })
+
+    it('Should return correct for tc3', () => {
+      const input = ["", ""]
+      const output = [["", ""]]
+
+      const result = groupAnagrams(input)
+
+      expect(result).to.eql(output)
+    })
+
+    it('Should return correct for tc4', () => {
+      const input = ["dad","day", "day", "boo", "bob"]
+      const output = [["dad"], ["day", "day"], ["boo"], ["bob"]]
+
+      const result = groupAnagrams(input)
+
+      expect(result).to.eql(output)
+    })
+  })
+
   describe('#Day 04: moveZeroes', () => {
     const moveZeroes = require('../challenge30days/day_04')
 
