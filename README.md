@@ -1,6 +1,6 @@
 # Interview preparation leetcode - in Javascript
 
-[![Build Status](https://api.travis-ci.org/hieutle2011/interview-prep-leetcode.svg?branch=master)](https://travis-ci.org/github/hieutle2011/interview-prep-leetcode)
+[![Build Status](https://api.travis-ci.org/hieutle2011/interview-prep-leetcode.svg?branch=master)](https://travis-ci.org/github/hieutle2011/interview-prep-leetcode) [![Run on Repl.it](https://repl.it/badge/github/hieutle2011/interview-prep-leetcode)](https://repl.it/github/hieutle2011/interview-prep-leetcode)
 
 ## Lessons learnt
 
