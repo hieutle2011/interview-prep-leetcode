@@ -11,3 +11,4 @@
 - 05th: Solved before.
 - 06th: Anagram is a very interesting subject, i found it quite hard to tackle it, learnt a great deal from google it ^^. Will come back to this later.
 - 07th: Store numbers in a hash map with its occurence, then loop the hash map to count the valid numbers.
+- 08th: Learn single linked-list, how to find middle node. TODO: try to write test case.
