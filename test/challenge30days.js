@@ -3,6 +3,21 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
+  describe('#Day 10: Min Stack @wip', () => {
+    const MinStack = require('../challenge30days/day_10')
+
+    it('Should return correct MinStack instance', () => {
+      const minStack = new MinStack();
+      minStack.push(-2);
+      minStack.push(0);
+      minStack.push(-3);
+      expect(minStack.getMin()).to.equal(-3)
+      minStack.pop();
+      expect(minStack.top()).to.equal(0)
+      expect(minStack.getMin()).to.equal(-2)
+    })
+  })
+
   describe('#Day 09: backspaceCompare', () => {
     const backspaceCompare = require('../challenge30days/day_09')
 
