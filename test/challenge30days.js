@@ -3,32 +3,64 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
+  describe('#Day 09: backspaceCompare', () => {
+    const backspaceCompare = require('../challenge30days/day_09')
+
+    it('Should return "true" for tc1', () => {
+      const S = "ab#c"
+      const T = "ad#c"
+      const result = backspaceCompare(S, T)
+      expect(result).to.equal(true)
+    })
+
+    it('Should return "true" for tc2', () => {
+      const S = "ab##"
+      const T = "c#d#"
+      const result = backspaceCompare(S, T)
+      expect(result).to.equal(true)
+    })
+
+    it('Should return "true" for tc3', () => {
+      const S = "a##c"
+      const T = "#a#c#a#c"
+      const result = backspaceCompare(S, T)
+      expect(result).to.equal(true)
+    })
+
+    it('Should return "false" for tc4', () => {
+      const S = "a#c"
+      const T = "b"
+      const result = backspaceCompare(S, T)
+      expect(result).to.equal(false)
+    })
+  })
+
   describe('#Day 07: countElements', () => {
     const countElements = require('../challenge30days/day_07')
 
     it('Should return correct for tc1', () => {
-      const input = [1,2,3]
+      const input = [1, 2, 3]
       const output = 2
       const result = countElements(input)
       expect(result).to.eql(output)
     })
 
     it('Should return correct for tc2', () => {
-      const input = [1,1,3,3,5,5,7,7]
+      const input = [1, 1, 3, 3, 5, 5, 7, 7]
       const output = 0
       const result = countElements(input)
       expect(result).to.eql(output)
     })
 
     it('Should return correct for tc3', () => {
-      const input = [1,3,2,3,5,0]
+      const input = [1, 3, 2, 3, 5, 0]
       const output = 3
       const result = countElements(input)
       expect(result).to.eql(output)
     })
 
     it('Should return correct for tc4', () => {
-      const input = [1,1,2,2]
+      const input = [1, 1, 2, 2]
       const output = 2
       const result = countElements(input)
       expect(result).to.eql(output)
