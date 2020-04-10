@@ -21,8 +21,8 @@ var backspaceCompare = function (S, T) {
         if (tChar && tChar == backspace) tArr.pop()
     }
 
-    const sStr = ''.concat(...sArr)
-    const tStr = ''.concat(...tArr)
+    const sStr = sArr.join('')
+    const tStr = tArr.join('')
 
     return sStr === tStr
 };

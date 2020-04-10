@@ -14,6 +14,9 @@
 - The easiest solution is quite obvious, but the challenging part is to find the trick to solve the problem without using any additional memory.
 - Store data in a hash map boost the search.
 
+### On String
+- [Concat method](2) is slower compared to array.join() or assignment operator
+
 ## Installation
 
 Make sure you have node installed on your machine, then run command
@@ -29,3 +32,4 @@ npm test
 - Look deeper into the *groupAnagrams*
 
 [1]:https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice
+[2]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat
