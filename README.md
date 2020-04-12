@@ -17,6 +17,10 @@
 ### On String
 - [Concat method](2) is slower compared to array.join() or assignment operator
 
+### On Object
+- Construct object prototype or ES class syntax.
+- Implement inheritance and methods.
+
 ## Installation
 
 Make sure you have node installed on your machine, then run command
