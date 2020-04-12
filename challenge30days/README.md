@@ -14,3 +14,4 @@
 - 08th: Learn single linked-list, how to find middle node. TODO: try to write test case.
 - 09th: Manipulate strings and array.
 - 10th: Learn implement Object and methods.
+- 11th: Learn binary tree and find its depth and diameter

@@ -3,7 +3,23 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 10: Min Stack @wip', () => {
+  describe('#Day 11: Diameter of Binary Tree @wip', () => {
+    const diameterOfBinaryTree = require('../challenge30days/day_11')
+    const TreeNode = require('../tree')
+
+    it('Should return correct Diameter', () => {
+      // Initialize a tree
+      const root = new TreeNode(1)
+      root.left = new TreeNode(2)
+      root.right = new TreeNode(3)
+      root.left.left = new TreeNode(4)
+      root.left.right = new TreeNode(5)
+
+      expect(diameterOfBinaryTree(root)).to.equal(3)
+    })
+  })
+
+  describe('#Day 10: Min Stack', () => {
     const MinStack = require('../challenge30days/day_10')
 
     it('Should return correct MinStack instance', () => {
