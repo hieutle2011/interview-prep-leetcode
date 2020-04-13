@@ -3,7 +3,15 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 11: Diameter of Binary Tree @wip', () => {
+  describe('#Day 12: Diameter of Binary Tree @wip', () => {
+    const lastStoneWeight = require('../challenge30days/day_12')
+    it('Should return correct answer tc1', () => {
+      const input = [2,7,4,1,8,1]
+      expect(lastStoneWeight(input)).to.equal(1)
+    })
+  })
+
+  describe('#Day 11: Diameter of Binary Tree', () => {
     const diameterOfBinaryTree = require('../challenge30days/day_11')
     const TreeNode = require('../tree')
 

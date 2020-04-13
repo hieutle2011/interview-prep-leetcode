@@ -2,7 +2,7 @@ const { describe, it } = require('mocha')
 const expect = require('chai').expect
 const TreeNode = require('../tree')
 
-describe('Tree (Easy Collection) @wip', () => {
+describe('Tree (Easy Collection)', () => {
 
     describe('#maxDepth', () => {
         // Initialize a tree
