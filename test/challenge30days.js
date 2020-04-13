@@ -3,7 +3,35 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 12: Diameter of Binary Tree @wip', () => {
+  describe('#Day 13: Contiguous Array @wip', () => {
+    const findMaxLength = require('../challenge30days/day_13')
+    it('Should return correct answer tc1', () => {
+      const input = [0,1]
+      expect(findMaxLength(input)).to.equal(2)
+    })
+
+    it('Should return correct answer tc2', () => {
+      const input = [0,0,1]
+      expect(findMaxLength(input)).to.equal(2)
+    })
+
+    it('Should return correct answer tc3', () => {
+      const input = [0,1,0,1]
+      expect(findMaxLength(input)).to.equal(4)
+    })
+
+    it('Should return correct answer tc4', () => {
+      const input = [0,1,1,0,1,1,1,0]
+      expect(findMaxLength(input)).to.equal(4)
+    })
+
+    it('Should return correct answer tc5', () => {
+      const input = [1]
+      expect(findMaxLength(input)).to.equal(0)
+    })
+  })
+
+  describe('#Day 12: Last Stone Weight', () => {
     const lastStoneWeight = require('../challenge30days/day_12')
     it('Should return correct answer tc1', () => {
       const input = [2,7,4,1,8,1]
