@@ -18,3 +18,4 @@
 - 12th: Piece of cake
 - 13th: Really challenging, brute force solution is exceed time. I have to look up answer on the internet. Thanks God, i learn more about hash map.
 - 14th: Simple manipulate sub string and array.
+- 15th: Fail exceed time limit at first try. Improve performance by using map to store previous calculated values so that i can save computation effort.
