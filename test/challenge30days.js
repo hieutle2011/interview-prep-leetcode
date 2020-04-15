@@ -3,25 +3,45 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 13: Contiguous Array @wip', () => {
+  describe('#Day 13: Perform String Shifts @wip', () => {
+    const stringShift = require('../challenge30days/day_14')
+    it('Should return correct answer tc1', () => {
+      const s = "abc"
+      const shift = [[0, 1], [1, 2]]
+      const exp = "cab"
+
+      const result = stringShift(s, shift)
+      expect(result).to.equal(exp)
+    })
+    it('Should return correct answer tc2', () => {
+      const s = "abcdefg"
+      const shift = [[1, 1], [1, 1], [0, 2], [1, 3]]
+      const exp = "efgabcd"
+
+      const result = stringShift(s, shift)
+      expect(result).to.equal(exp)
+    })
+  })
+
+  describe('#Day 13: Contiguous Array', () => {
     const findMaxLength = require('../challenge30days/day_13')
     it('Should return correct answer tc1', () => {
-      const input = [0,1]
+      const input = [0, 1]
       expect(findMaxLength(input)).to.equal(2)
     })
 
     it('Should return correct answer tc2', () => {
-      const input = [0,0,1]
+      const input = [0, 0, 1]
       expect(findMaxLength(input)).to.equal(2)
     })
 
     it('Should return correct answer tc3', () => {
-      const input = [0,1,0,1]
+      const input = [0, 1, 0, 1]
       expect(findMaxLength(input)).to.equal(4)
     })
 
     it('Should return correct answer tc4', () => {
-      const input = [0,1,1,0,1,1,1,0]
+      const input = [0, 1, 1, 0, 1, 1, 1, 0]
       expect(findMaxLength(input)).to.equal(4)
     })
 
@@ -34,7 +54,7 @@ describe('30 days leetcoding challenge @30day', () => {
   describe('#Day 12: Last Stone Weight', () => {
     const lastStoneWeight = require('../challenge30days/day_12')
     it('Should return correct answer tc1', () => {
-      const input = [2,7,4,1,8,1]
+      const input = [2, 7, 4, 1, 8, 1]
       expect(lastStoneWeight(input)).to.equal(1)
     })
   })

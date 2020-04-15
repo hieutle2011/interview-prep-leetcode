@@ -17,3 +17,4 @@
 - 11th: Learn binary tree and find its depth and diameter
 - 12th: Piece of cake
 - 13th: Really challenging, brute force solution is exceed time. I have to look up answer on the internet. Thanks God, i learn more about hash map.
+- 14th: Simple manipulate sub string and array.
