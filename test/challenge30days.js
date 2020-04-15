@@ -3,7 +3,20 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 13: Perform String Shifts @wip', () => {
+  describe('#Day 15: Product of Array Except Self @wip', () => {
+    const productExceptSelf = require('../challenge30days/day_15')
+
+    it('Should return correct for tc1', () => {
+      const input = [1, 2, 3, 4]
+      const exp = [24, 12, 8, 6]
+
+      const output = productExceptSelf(input)
+
+      expect(output).to.eql(exp)
+    })
+  })
+
+  describe('#Day 14: Perform String Shifts', () => {
     const stringShift = require('../challenge30days/day_14')
     it('Should return correct answer tc1', () => {
       const s = "abc"
