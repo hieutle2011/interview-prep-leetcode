@@ -2,8 +2,31 @@ const { describe, it } = require('mocha')
 const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
+  describe('#Day 17: Number of Islands @wip', () => {
+    const numIslands = require('../challenge30days/day_17')
 
-  describe('#Day 16: Valid Parenthesis String @wip', () => {
+    it('Should return correct for tc1', () => {
+      const input = [
+        ['1', '1', '1', '1', '0'],
+        ['1', '1', '0', '1', '0'],
+        ['1', '1', '0', '0', '0'],
+        ['0', '0', '0', '0', '0']
+      ]
+      expect(numIslands(input)).to.equal(1)
+    })
+
+    it('Should return correct for tc2', () => {
+      const input = [
+        ['1', '1', '0', '0', '0'],
+        ['1', '1', '0', '0', '0'],
+        ['0', '0', '1', '0', '0'],
+        ['0', '0', '0', '1', '1']
+      ]
+      expect(numIslands(input)).to.equal(3)
+    })
+  })
+
+  describe('#Day 16: Valid Parenthesis String', () => {
     const checkValidString = require('../challenge30days/day_16')
 
     it('Should return correct for tc1', () => {
@@ -51,7 +74,7 @@ describe('30 days leetcoding challenge @30day', () => {
       expect(checkValidString(input)).to.equal(true)
     })
   })
-  
+
 
   describe('#Day 15: Product of Array Except Self', () => {
     const productExceptSelf = require('../challenge30days/day_15')

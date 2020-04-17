@@ -20,3 +20,7 @@
 - 14th: Simple manipulate sub string and array.
 - 15th: Fail exceed time limit at first try. Improve performance by using map to store previous calculated values so that i can save computation effort.
 - 16th: Interesting question. There are many solutions found on forum, but i find the left and right balance is intuitive and easier to understand.
+- 17th: Briliant solution for this tough one found on [youtube](1). Take away is using recursive function to update the neigbour items concisely.
+
+
+[1]:https://www.youtube.com/watch?v=CLvNe-8-6s8
