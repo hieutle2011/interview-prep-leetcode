@@ -3,7 +3,57 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 15: Product of Array Except Self @wip', () => {
+  describe('#Day 16: Valid Parenthesis String @wip', () => {
+    const checkValidString = require('../challenge30days/day_16')
+
+    it('Should return correct for tc1', () => {
+      const input = "()"
+      expect(checkValidString(input)).to.equal(true)
+    })
+
+    it('Should return correct for tc2', () => {
+      const input = "(*)"
+      expect(checkValidString(input)).to.equal(true)
+    })
+
+    it('Should return correct for tc3', () => {
+      const input = "(*))"
+      expect(checkValidString(input)).to.equal(true)
+    })
+
+    it('Should return correct for tc4', () => {
+      const input = ")("
+      expect(checkValidString(input)).to.equal(false)
+    })
+
+    it('Should return correct for tc5', () => {
+      const input = "*(()"
+      expect(checkValidString(input)).to.equal(false)
+    })
+
+    it('Should return correct for tc6', () => {
+      const input = "(())((())()()(*)(*()(())())())()()((()())((()))(*"
+      expect(checkValidString(input)).to.equal(false)
+    })
+
+    it('Should return correct for tc7', () => {
+      const input = "()()"
+      expect(checkValidString(input)).to.equal(true)
+    })
+
+    it('Should return correct for tc8', () => {
+      const input = "(()*"
+      expect(checkValidString(input)).to.equal(true)
+    })
+
+    it('Should return correct for tc9', () => {
+      const input = "((()))()(())(*()()())**(())()()()()((*()*))((*()*)"
+      expect(checkValidString(input)).to.equal(true)
+    })
+  })
+  
+
+  describe('#Day 15: Product of Array Except Self', () => {
     const productExceptSelf = require('../challenge30days/day_15')
 
     it('Should return correct for tc1', () => {
