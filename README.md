@@ -13,6 +13,7 @@
 ### On Array
 - The easiest solution is quite obvious, but the challenging part is to find the trick to solve the problem without using any additional memory.
 - Store data in a hash map boost the search.
+- While new Array(n) is most of the time [unnecessary](3), it is faster than just attaching items to non-existant indexes, and certainly faster than pushing.
 
 ### On String
 - [Concat method](2) is slower compared to array.join() or assignment operator
@@ -37,3 +38,4 @@ npm test
 
 [1]:https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice
 [2]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat
+[3]:https://coderwall.com/p/h4xm0w/why-never-use-new-array-in-javascript

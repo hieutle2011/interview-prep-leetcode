@@ -2,7 +2,21 @@ const { describe, it } = require('mocha')
 const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
-  describe('#Day 17: Number of Islands @wip', () => {
+
+  describe('#Day 18: Minimum Path Sum @wip', () => {
+    const minPathSum = require('../challenge30days/day_18')
+
+    it('Should return correct for tc1', () => {
+      const input = [
+        [1,3,1],
+        [1,5,1],
+        [4,2,1]
+      ]
+      expect(minPathSum(input)).to.equal(7)
+    })
+  })
+
+  describe('#Day 17: Number of Islands', () => {
     const numIslands = require('../challenge30days/day_17')
 
     it('Should return correct for tc1', () => {
