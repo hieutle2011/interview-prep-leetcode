@@ -22,6 +22,7 @@
 - 16th: Interesting question. There are many solutions found on forum, but i find the left and right balance is intuitive and easier to understand.
 - 17th: Briliant solution for this tough one found on [youtube](1). Take away is using recursive function to update the neigbour items concisely.
 - 18th: It is slow to grow an array using .push(), it's recommend allocating an array using constructor new Array (if you know array size beforehand)
+- 19th: Simple for loop solves the problem.
 
 
 [1]:https://www.youtube.com/watch?v=CLvNe-8-6s8

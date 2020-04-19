@@ -3,14 +3,36 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 18: Minimum Path Sum @wip', () => {
+  describe('#Day 19: Search in Rotated Sorted Array @wip', () => {
+    const search = require('../challenge30days/day_19')
+
+    it('Should return correct for tc1', () => {
+      const nums = [4, 5, 6, 7, 0, 1, 2]
+      const target = 0
+      expect(search(nums, target)).to.equal(4)
+    })
+
+    it('Should return correct for tc2', () => {
+      const nums = [4, 5, 6, 7, 0, 1, 2]
+      const target = 3
+      expect(search(nums, target)).to.equal(-1)
+    })
+
+    it('Should return correct for tc3', () => {
+      const nums = [2]
+      const target = 3
+      expect(search(nums, target)).to.equal(-1)
+    })
+  })
+
+  describe('#Day 18: Minimum Path Sum', () => {
     const minPathSum = require('../challenge30days/day_18')
 
     it('Should return correct for tc1', () => {
       const input = [
-        [1,3,1],
-        [1,5,1],
-        [4,2,1]
+        [1, 3, 1],
+        [1, 5, 1],
+        [4, 2, 1]
       ]
       expect(minPathSum(input)).to.equal(7)
     })
