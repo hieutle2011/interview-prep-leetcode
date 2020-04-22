@@ -3,7 +3,27 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 19: Search in Rotated Sorted Array @wip', () => {
+  describe('#Day 20: Search in Rotated Sorted Array @wip', () => {
+    const bstFromPreorder = require('../challenge30days/day_20')
+    const TreeNode = require('../tree')
+
+    it('Should return correct for tc1', () => {
+      const preorder = [8,5,1,7,10,12]
+
+      const root = new TreeNode(8)
+      root.left = new TreeNode(5)
+      root.right = new TreeNode(10)
+      root.left.left = new TreeNode(1)
+      root.left.right = new TreeNode(7)
+      // root.right.left = new TreeNode(1)
+      root.right.right = new TreeNode(12)
+      
+      const tree = bstFromPreorder(preorder)
+      expect(tree).to.eql(root)
+    })
+  })
+
+  describe('#Day 19: Search in Rotated Sorted Array', () => {
     const search = require('../challenge30days/day_19')
 
     it('Should return correct for tc1', () => {
