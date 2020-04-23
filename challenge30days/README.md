@@ -25,6 +25,8 @@
 - 19th: Simple for loop solves the problem.
 - 20th: Binary Tree: look up on forum posts [here](2).
 - 21st: My solution is approved but not optimal, should improve it.
+- 22nd: I have little understanding of bitwise knowledge and learn from discussion [here](3).
 
 [1]:https://www.youtube.com/watch?v=CLvNe-8-6s8
 [2]:https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/discuss?currentPage=1&orderBy=most_votes&query=
+[3]:https://leetcode.com/problems/bitwise-and-of-numbers-range/discuss/56721/2-line-Solution-with-detailed-explanation

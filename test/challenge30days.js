@@ -3,7 +3,25 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 21: Subarray Sum Equals K @wip', () => {
+  describe('#Day 22: Bitwise AND of Numbers Range @wip', () => {
+    const rangeBitwiseAnd = require('../challenge30days/day_22')
+
+    it('Should return correct for tc1', () => {
+      const nums = [5, 7], exp = 4
+      const [m, n] = nums
+      let result = rangeBitwiseAnd(m, n)
+      expect(result).to.equal(exp)
+    })
+
+    it('Should return correct for tc2', () => {
+      const nums = [0, 1], exp = 0
+      const [m, n] = nums
+      let result = rangeBitwiseAnd(m, n)
+      expect(result).to.equal(exp)
+    })
+  })
+
+  describe('#Day 21: Subarray Sum Equals K', () => {
     const subarraySum = require('../challenge30days/day_21')
 
     it('Should return correct for tc1', () => {
@@ -19,7 +37,7 @@ describe('30 days leetcoding challenge @30day', () => {
     })
 
     it('Should return correct for tc4', () => {
-      const nums = [-815,388,230,365,-106,284,-222,-884,240,422,599,-315,-281,-14,29,-812,-55,106,-858,-581,-725,382,730,780,785,576,440,-378,529,-467,816,-754,983,-921,-616,-668,-6,-140,-795,-448,-96,-146,-435,141,951,933,566,821,-996,-380,542,810,-384,912,-442]
+      const nums = [-815, 388, 230, 365, -106, 284, -222, -884, 240, 422, 599, -315, -281, -14, 29, -812, -55, 106, -858, -581, -725, 382, 730, 780, 785, 576, 440, -378, 529, -467, 816, -754, 983, -921, -616, -668, -6, -140, -795, -448, -96, -146, -435, 141, 951, 933, 566, 821, -996, -380, 542, 810, -384, 912, -442]
       const k = 62, exp = 10
       let result = subarraySum(nums, k)
       expect(result).to.eql(exp)
