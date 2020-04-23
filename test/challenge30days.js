@@ -3,12 +3,35 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 20: Search in Rotated Sorted Array @wip', () => {
+  describe('#Day 21: Subarray Sum Equals K @wip', () => {
+    const subarraySum = require('../challenge30days/day_21')
+
+    it('Should return correct for tc1', () => {
+      const nums = [1, 1, 1], k = 2, exp = 2
+      let result = subarraySum(nums, k)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should return correct for tc2', () => {
+      const nums = [100, 1, 2, 3, 4], k = 6, exp = 1
+      let result = subarraySum(nums, k)
+      expect(result).to.eql(exp)
+    })
+
+    it('Should return correct for tc4', () => {
+      const nums = [-815,388,230,365,-106,284,-222,-884,240,422,599,-315,-281,-14,29,-812,-55,106,-858,-581,-725,382,730,780,785,576,440,-378,529,-467,816,-754,983,-921,-616,-668,-6,-140,-795,-448,-96,-146,-435,141,951,933,566,821,-996,-380,542,810,-384,912,-442]
+      const k = 62, exp = 10
+      let result = subarraySum(nums, k)
+      expect(result).to.eql(exp)
+    })
+  })
+
+  describe('#Day 20: Search in Rotated Sorted Array', () => {
     const bstFromPreorder = require('../challenge30days/day_20')
     const TreeNode = require('../tree')
 
     it('Should return correct for tc1', () => {
-      const preorder = [8,5,1,7,10,12]
+      const preorder = [8, 5, 1, 7, 10, 12]
 
       const root = new TreeNode(8)
       root.left = new TreeNode(5)
@@ -17,7 +40,7 @@ describe('30 days leetcoding challenge @30day', () => {
       root.left.right = new TreeNode(7)
       // root.right.left = new TreeNode(1)
       root.right.right = new TreeNode(12)
-      
+
       const tree = bstFromPreorder(preorder)
       expect(tree).to.eql(root)
     })

@@ -24,6 +24,7 @@
 - 18th: It is slow to grow an array using .push(), it's recommend allocating an array using constructor new Array (if you know array size beforehand)
 - 19th: Simple for loop solves the problem.
 - 20th: Binary Tree: look up on forum posts [here](2).
+- 21st: My solution is approved but not optimal, should improve it.
 
 [1]:https://www.youtube.com/watch?v=CLvNe-8-6s8
 [2]:https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/discuss?currentPage=1&orderBy=most_votes&query=
