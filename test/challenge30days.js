@@ -3,7 +3,27 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 22: Bitwise AND of Numbers Range @wip', () => {
+  describe('#Day 24: Bitwise AND of Numbers Range @wip', () => {
+    const canJump = require('../challenge30days/day_24')
+
+    it('Should return correct for tc1', () => {
+      const nums = [2, 3, 1, 1, 4]
+      const exp = true
+      let result = canJump(nums)
+      expect(result).to.equal(exp)
+    })
+
+    it('Should return correct for tc2', () => {
+      const nums = [3, 2, 1, 0, 4]
+      const exp = false
+      let result = canJump(nums)
+      expect(result).to.equal(exp)
+    })
+  })
+
+  // TODO: day 23
+
+  describe('#Day 22: Bitwise AND of Numbers Range', () => {
     const rangeBitwiseAnd = require('../challenge30days/day_22')
 
     it('Should return correct for tc1', () => {
