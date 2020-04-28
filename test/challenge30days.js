@@ -3,7 +3,39 @@ const expect = require('chai').expect
 
 describe('30 days leetcoding challenge @30day', () => {
 
-  describe('#Day 24: Bitwise AND of Numbers Range @wip', () => {
+  describe('#Day 25: Longest Common Subsequence @wip', () => {
+    const longestCommonSubsequence = require('../challenge30days/day_25')
+
+    it('Should return correct for tc1', () => {
+      const text1 = "abcde", text2 = "ace" 
+      const exp = 3
+      let result = longestCommonSubsequence(text1, text2)
+      expect(result).to.equal(exp)
+    })
+
+    it('Should return correct for tc2', () => {
+      const text1 = "abc", text2 = "abc"
+      const exp = 3
+      let result = longestCommonSubsequence(text1, text2)
+      expect(result).to.equal(exp)
+    })
+
+    it('Should return correct for tc3', () => {
+      const text1 = "XMJYAUZ", text2 = "MZJAWXU"
+      const exp = 4
+      let result = longestCommonSubsequence(text1, text2)
+      expect(result).to.equal(exp)
+    })
+
+    // it('Should return correct for tc4', () => {
+    //   const text1 = "pmjghexybyrgzczy", text2 = "hafcdqbgncrcbihkd"
+    //   const exp = 4
+    //   let result = longestCommonSubsequence(text1, text2)
+    //   expect(result).to.equal(exp)
+    // })
+  })
+
+  describe('#Day 24: Bitwise AND of Numbers Range', () => {
     const canJump = require('../challenge30days/day_24')
 
     it('Should return correct for tc1', () => {

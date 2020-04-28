@@ -28,8 +28,10 @@
 - 22nd: I have little understanding of bitwise knowledge and learn from discussion [here](3).
 - 23rd: TODO LRUCache
 - 24th: Learn from this [discussion](4). TODO: Try another solutions (Backtracking,Dynamic Programming Top-down, Dynamic Programming Bottom-up)
+- 25th: Great explaination [here](5). Need to learn more about DP.
 
 [1]:https://www.youtube.com/watch?v=CLvNe-8-6s8
 [2]:https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/discuss?currentPage=1&orderBy=most_votes&query=
 [3]:https://leetcode.com/problems/bitwise-and-of-numbers-range/discuss/56721/2-line-Solution-with-detailed-explanation
 [4]:https://leetcode.com/articles/jump-game/
+[5]:https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
