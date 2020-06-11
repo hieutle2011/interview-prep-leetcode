@@ -4,6 +4,20 @@ from python.module_strings.easy import Solution
 solution = Solution()
 
 
+class TestIsAnagram(unittest.TestCase):
+    def test_is_anagram_1(self):
+        s = "anagram"
+        t = "nagaram"
+        result = solution.isAnagram(s, t)
+        self.assertEqual(result, True)
+
+    def test_is_anagram_2(self):
+        s = "rat"
+        t = "car"
+        result = solution.isAnagram(s, t)
+        self.assertEqual(result, False)
+
+
 class TestFirstUniqueChar(unittest.TestCase):
     def test_first_unique(self):
         s = "leetcode"

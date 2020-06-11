@@ -2,6 +2,20 @@ from typing import List
 
 
 class Solution:
+
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+
+        search = s
+        for char in t:
+            index_in_search = search.find(char)
+            if index_in_search == -1:
+                return False
+            else:
+                search = ''.join([search[:index_in_search], search[index_in_search+1:]])
+        return True
+
     def firstUniqChar(self, s: str) -> int:
         """Given a string, find the first non-repeating character in it
         and return it's index. If it doesn't exist, return -1."""
